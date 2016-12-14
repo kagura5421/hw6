@@ -1,0 +1,43 @@
+.outer-box{
+  width:200px;
+  height: 200px;
+  border: 2px solid navy;
+  position: relative
+}
+.box{
+  width:100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  animation: 5s move infinite;
+
+}
+
+
+@keyframes move{
+    0%{
+        background: red;
+        left: 0px;
+        top:0px;
+    }
+    25%{
+        background: gold;
+        left: 100px;
+        top:0px;
+    }
+    50%{
+        background: lightblue;
+        left: 100px;
+        top:100px;
+    }
+    75%{
+        background: lightgreen;
+        left: 0px;
+        top:100px;
+    }
+    100%{
+        background:  red;
+        left: 0px;
+        top:0px;
+    }
+}
